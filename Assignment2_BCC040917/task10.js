@@ -11,7 +11,7 @@ else if (userpassword == password)
 {
     document.write("Correct!");    
 }
-else
+else if (userpassword != password)
 {
     document.write("Incorrect password");
 }
