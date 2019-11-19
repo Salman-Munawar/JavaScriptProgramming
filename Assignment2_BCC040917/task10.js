@@ -3,15 +3,18 @@ var password = "abcd1234";
 
 var userpassword; 
 
-if(userpassword == null)
+if(userpassword == null || userpassword == "")
 {
-    userpassword = prompt("Please enter your password");
+    userpassword = prompt("Please enter your password");     
 }
-else if (userpassword == password)
+
+  if (userpassword === password)
 {
-    document.write("Correct!");    
+    alert("Correct! The password you entered matches the original password");
+    document.write("Correct! The password you entered matches the original password");    
 }
 else if (userpassword != password)
 {
+    alert("Incorrect password");
     document.write("Incorrect password");
 }
