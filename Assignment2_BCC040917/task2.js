@@ -1,24 +1,22 @@
-var signalColor = prompt("What is the color of road traffic signal ?")
+var signalColor = prompt("What is the color of road traffic signal ?").toUpperCase();
 var message;
 
-if(signalColor == "Red")
+if(signalColor == "RED")
 {
-    message = "Must Stop";
-    document.write(message);
+    message = "Must Stop";    
 }
 
-else if (signalColor == "Yellow")
+else if (signalColor == "YELLOW")
 {
-    message = "Ready to move";
-    document.write(message);
+    message = "Ready to move";     
 }
-else if (signalColor == "Green")
+else if (signalColor == "GREEN")
 {
-    message = "Move now";
-    document.write(message);
+    message = "Move now";     
 }
 else
 {
-    message = "Color of road traffic signal is wrong";
-    document.write(message);
+    message = "Color of road traffic signal is wrong";     
 }
+
+document.write(message);

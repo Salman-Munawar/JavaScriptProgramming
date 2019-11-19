@@ -1,7 +1,7 @@
 
 var password = "abcd1234";
 
-var userpassword; 
+var userpassword = prompt("Please enter password");
 
 if(userpassword == null || userpassword == "")
 {
@@ -9,12 +9,10 @@ if(userpassword == null || userpassword == "")
 }
 
   if (userpassword === password)
-{
-    alert("Correct! The password you entered matches the original password");
+{    
     document.write("Correct! The password you entered matches the original password");    
 }
 else if (userpassword != password)
-{
-    alert("Incorrect password");
+{   
     document.write("Incorrect password");
 }

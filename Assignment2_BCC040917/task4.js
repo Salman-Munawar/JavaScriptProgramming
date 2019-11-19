@@ -1,6 +1,6 @@
 document.write("<h1>Marks Sheet</h1>");
 document.write("<br>");
-document.write("<br>");
+ 
 var marksObtained = prompt("Enter marks obtained in three subjects");
 var totalMarks = prompt("Enter Total Marks");
 
@@ -23,3 +23,9 @@ else {
     grade = "Fail";
  remakrs = "Sorry";
 }
+
+document.write("Total marks : "+ totalMarks+"<br>");
+document.write("Marks Obtained : "+ marksObtained+"<br>");
+document.write("Percentage : "+ Math.round(percentage * 100)/100+"%"+"<br>");
+document.write("Grade : "+ grade+"<br>");
+document.write("Remarks : "+ remakrs+"<br>");
