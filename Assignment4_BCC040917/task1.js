@@ -1,4 +1,5 @@
 var city = "Hyderabad";
 var str = city.replace("Hyder","Islam");
-alert(city);
-alert(str);
+
+document.write("City: " + city + "<br/>");
+document.write("After replacement: " + str);

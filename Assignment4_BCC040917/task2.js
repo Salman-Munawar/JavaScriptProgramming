@@ -1,7 +1,7 @@
 var str = "472";
-
 var num = Number(str);
-alert(num);
 
-alert(typeof str);
-alert( typeof num );
+document.write("Value: " + str + "<br/>");
+document.write("Type: " + typeof str + "<br/>");
+document.write("Value: " + num + "<br/>");
+document.write("Type: " + typeof num); 
