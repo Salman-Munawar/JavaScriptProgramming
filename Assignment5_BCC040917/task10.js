@@ -1,19 +1,9 @@
 
-var Vowels = ["a", "e", "i", "o", "u"];
+var str = prompt("Enter a string ");
 
-function vowelsCounter(text) {
-    // Initialize counter
-    var counter = 0;
+function vowelCount(str) {
+    return str.replace(/[^aeiou]/gi, "").length;
+  };
+  
 
-    // Loop through text to test if each character is a vowel
-    for (var letter of text.toLowerCase()) {
-        if (vowels.includes(letter)) {
-            counter++
-        }
-    }
-
-    // Return number of vowels
-    return counter
-}
-
-alert(vowelsCounter("apple"));
+ document.write("Number of vowels: " + vowelCount(str.toLowerCase()));
